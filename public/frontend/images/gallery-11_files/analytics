@@ -1,0 +1,30 @@
+
+function piResponse() {
+		piSetCookie('visitor_id707423', '1041404596', 3650);
+			piSetCookie('visitor_id707423-hash', '724c88627f10b667014591cedefce6108e5bad90bd9e25031886e59b7774fc17ca4b4fc6f63cfee366b7e2daedc4b45cd7cc634b', 3650);
+		
+		if (document.location.protocol != "https:" || (document.location.protocol == "https:" && true)) {
+		var analytics_link = document.location.protocol + "//" + "info.roomsketcher.com/analytics?";
+		pi.tracker.visitor_id='1041404596';
+
+				pi.tracker.visitor_id_sign='724c88627f10b667014591cedefce6108e5bad90bd9e25031886e59b7774fc17ca4b4fc6f63cfee366b7e2daedc4b45cd7cc634b';
+		
+				pi.tracker.campaign_id='1578';
+		
+		var variables = 'conly=true';
+		for (property in pi.tracker) {
+					variables += "&" + property + "=" + encodeURIComponent(pi.tracker[property]);
+				}
+		var headID = document.getElementsByTagName("head")[0];
+		piScriptObj[piScriptNum] = document.createElement('script');
+		piScriptObj[piScriptNum].type = 'text/javascript';
+		piScriptObj[piScriptNum].src = analytics_link + variables;
+		headID.appendChild(piScriptObj[piScriptNum]);
+		piScriptObj[piScriptNum].onload = function() { return; }
+	}
+	}
+piResponse();
+
+
+
+

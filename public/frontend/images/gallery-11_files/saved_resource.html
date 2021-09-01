@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://gallery.roomsketcher.com/360/?gid=18658372&l=en&play=0&logo=1&title=1&toolbar=1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!--link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /-->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://gallery.roomsketcher.com/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://gallery.roomsketcher.com/images/favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://gallery.roomsketcher.com/images/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://gallery.roomsketcher.com/images/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://gallery.roomsketcher.com/images/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://gallery.roomsketcher.com/images/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://gallery.roomsketcher.com/images/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://gallery.roomsketcher.com/images/favicon-152.png">
+    <meta name="application-name" content="RoomSketcher - Visualizing Homes">
+    <meta name="msapplication-TileImage" content="/images/favicon-144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+ 
+            <meta property="og:url" content="https://gallery.roomsketcher.com/360/?gid=18658372&amp;l=en">
+  <meta property="og:title" content="RoomSketcher-Gym-Big-Bright-PD4811406">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://projectmedia.roomsketcher.com/08/885/35d-/3cc/f-11/e8-a/34a-/0ad/e2f/780/98f/800_600_85_1">
+  <meta property="fb:app_id" content="225427890809865">
+
+              <title>RoomSketcher-Gym-Big-Bright-PD4811406</title>
+        
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./jquery.fancybox.min.css">
+    
+    <!--link rel="stylesheet" type="text/css" href="https://bin.roomsketcher.com/libs/font-awesome/font-awesome.min.css"-->
+    <!--link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic"-->
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="./gallery.css">
+              <style>
+    
+    /*.fancybox-slide>*{background-color: transparent;}*/
+    .fancybox-is-open .fancybox-bg{opacity:.5;}
+    #pano {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }    
+    #controlsTop {
+      background: rgba(150, 150, 150, 0.5);
+      color: white;
+      font-size: 16px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 44px;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      z-index: 2;
+      cursor: default;
+    }
+    #controlsTopLeft {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0px;
+      margin: 4px;
+      z-index: 4;
+    }
+    #controlsTopCenter {
+      background: rgba(150, 150, 150, 0.5);
+      color: white;
+      font-size: 16px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 44px;
+      text-align: center;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      z-index: 3;
+    }
+    #controlsTopRight {
+      position: absolute;
+      top: 0;
+      right: 0;
+      /*text-align: right;*/
+      /*width: 50%;*/
+      padding: 0px;
+      margin: 0px;
+      z-index: 4;
+    }
+    
+    #controlsBottom {
+      /*background: rgba(150, 150, 150, 0.5);*/
+      color: white;
+      font-size: 16px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      height: 42px;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      z-index: 2;
+      cursor: default;
+    }
+    
+    #controlsBottomLeft {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      padding: 0px;
+      margin: 0px;
+      z-index: 4;
+    }
+    #controlsBottomCenter {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      z-index: 3;
+      text-align: center;
+    }
+    #controlsBottomRight {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0px;
+      margin: 0px;
+      z-index: 4;
+    }
+
+    .errorMessageBackground {
+      position:absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #aaaaaa;
+      opacity: 0.5;
+      z-index: 5;
+    }
+    .errorMessageContent {
+      z-index: 6;
+    }
+    
+    .overlayBackground {
+      position:absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #aaaaaa;
+      opacity: 0.25;
+      z-index: 7;
+    }
+    .overlayContent {
+      font-size : 60px;
+      font-family: Verdana;
+      text-align: center;
+      font-weight: bold;
+      color: rgba(100, 100, 100, 0.5);
+      overflow: hidden;
+      white-space: nowrap;
+      user-select:none;
+      -webkit-touch-callout:default;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
+      z-index: 8;
+    }
+    @media screen and (max-width: 1600px){
+       .overlayContent {
+         font-size : 50px;
+       }
+    }
+    @media screen and (max-width: 1200px){
+       .overlayContent {
+         font-size : 40px;
+       }
+    }
+    @media screen and (max-width: 800px){
+       .overlayContent {
+         font-size : 30px;
+       }
+    }
+    @media screen and (max-width: 600px){
+       .overlayContent {
+         font-size : 20px;
+       }
+    }    
+    @media screen and (max-width: 400px){
+       .overlayContent {
+         font-size : 14px;
+       }
+    }    
+    
+    .div-centered {
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }    
+
+    
+    .panel-primary>.panel-heading-custom, .panel-heading-custom {
+      background-color: #00B5CC;
+    }
+    
+    .btn-custom {
+      color: white;
+      margin: 3px;
+      padding: 6px 0px 6px 0px;
+      width: 40px;
+      text-align: center;
+      background: rgba(100, 100, 100, 0.5);
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 1px solid rgba(200, 200, 200, 0.8);
+    }
+    .btn-custom:hover {
+      /*background: rgba(200, 200, 200, 1);*/
+      color: #5e5e5e;
+      border: 1px solid #aaaaaa;
+      background: rgba(256, 256, 256, 1);
+    }
+    .btn-custom {
+      margin: 4px 1px 4px 1px;
+    }
+    .btn-custom-text {
+      background-color: #00B5CC;
+      color: white;
+    }
+    .dropdown-menu-custom {
+      color: white;
+      background: rgba(100, 100, 100, 0.5);
+    }
+    .dropdown-menu-custom li a{
+      color: white;
+    }
+    .input-group-share {
+      padding-top: 12px;
+      width: 100%;
+      height: 95px;
+      font-size: 12px;
+      /*border: 1px solid lime;*/
+    }
+    .input-group-share textarea {
+      font-size: 12px;
+      /*border: 1px solid red;*/
+    }
+    .input-group-share input {
+      font-size: 12px;
+      /*border: 1px solid red;*/
+    }
+
+    #lblTitle {
+      padding-top: 11px;
+    }
+    @media screen and (max-width: 200px) {
+      #btnZoomIn, #btnZoomOut {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 300px) {
+      #btnLeft, #btnRight {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      #btnUp, #btnDown {
+        display: none;
+      }
+    }
+    /*
+    @media screen and (max-width: 500px) {
+      #imgLogo {
+        display: none;
+      }
+    }
+    */
+    #panel-main {
+      padding: 0px;
+    }
+    .glyphicon {
+      width: 16px;
+    }
+    
+    .dialogContent {
+      margin: 0px;
+      width: 100%;
+    }
+
+    /*
+   #container-main {
+    position:fixed !important;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+  }    
+  */
+    
+    </style>
+
+    
+    <!-- RoomSketcher Code for Visitors -->
+<script type="text/javascript" src="./pd.js"></script><script type="text/javascript" async="" src="./ga.js"></script><script type="text/javascript">
+
+var _rstp = window.location.hostname.split('.'); 
+var _rsts = ('https:'==document.location.protocol?'https://':'http://')+(_rstp.length>=4?_rstp[0]+'.':'')+'account.roomsketcher.com/tracking/';
+_rsts += '?pageUrl=' + encodeURIComponent(window.location.href);
+_rsts += '&referrerUrl=' + encodeURIComponent(document.referrer);
+_rsts += '&userAgent=' + encodeURIComponent(navigator.userAgent);
+_rsts += '&acceptLanguage=' + encodeURIComponent(navigator.language);
+var _rsti = document.createElement('IMG'); 
+_rsti.src = _rsts;
+
+</script>  
+
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23477539-5']);
+  _gaq.push(['_setDomainName', 'roomsketcher.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    <script type="text/javascript">
+
+piAId = '708423';
+piCId = '1578';
+piHostname = 'pi.pardot.com';
+
+(function() {
+function async_load(){
+  var s = document.createElement('script'); s.type = 'text/javascript';
+  s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+  var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+}
+if(window.attachEvent) { window.attachEvent('onload', async_load); }
+else { window.addEventListener('load', async_load, false); }
+})();
+
+</script>
+
+    
+    
+  <script type="text/javascript" src="./analytics"></script><script type="text/javascript" src="./analytics(1)"></script></head>
+  <body>
+              <div id="pano" style="overflow: hidden; cursor: default;">
+      <!--div id="controlsTop"-->
+        <div id="controlsTopLeft">
+                  </div>
+        <div id="controlsTopCenter">
+          <div id="lblTitle">RoomSketcher-Gym-Big-Bright-PD4811406</div>
+        </div>
+        <div id="controlsTopRight">
+          <div class="btn-group _btn-group-sm" id="mainMenu">
+            <button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="glyphicon glyphicon-menu-hamburger"></span><!--span class="caret"></span-->
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right dropdown-menu-custom">
+                            <li>
+                <a href="https://gallery.roomsketcher.com/360/?gid=18658372&amp;l=en&amp;play=0&amp;logo=1&amp;title=1&amp;toolbar=1#" id="menuItemTitle">
+                  <span class="glyphicon glyphicon-ok" id="menuItemTitleChecked"></span><span class="glyphicon" id="menuItemTitleUnchecked" style="display: none;"></span>&nbsp;Title
+                </a>
+              </li>
+              <li>
+                <a href="https://gallery.roomsketcher.com/360/?gid=18658372&amp;l=en&amp;play=0&amp;logo=1&amp;title=1&amp;toolbar=1#" id="menuItemToolbar">
+                  <span class="glyphicon glyphicon-ok" id="menuItemToolbarChecked"></span><span class="glyphicon" id="menuItemToolbarUnchecked" style="display: none;"></span>&nbsp;Toolbar
+                </a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li><a id="menuItemShare" class="commonDialog" data-src="#shareContent" href="https://gallery.roomsketcher.com/360/?gid=18658372&amp;l=en&amp;play=0&amp;logo=1&amp;title=1&amp;toolbar=1#" onclick="javascript:stop(); return false;">Share...</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a id="menuItemAbout" class="commonDialog" data-src="#aboutContent" href="https://gallery.roomsketcher.com/360/?gid=18658372&amp;l=en&amp;play=0&amp;logo=1&amp;title=1&amp;toolbar=1#" onclick="javascript:return false;">About...</a></li>
+            </ul>
+          </div>
+        </div>
+      <!--/div-->
+        
+      <div id="controlsBottom">
+        <div id="controlsBottomLeft">
+
+          <button class="btn btn-custom btn-custom-grouped" id="btnPlay">
+            <span class="glyphicon glyphicon-play" id="iconPlay"></span>
+            <span class="glyphicon glyphicon-stop" id="iconStop" style="display: none;"></span>
+          </button>
+          
+        </div>
+        <div id="controlsBottomCenter">
+          
+          <button id="btnLeft" class="btn btn-custom btn-custom-grouped"><span class="glyphicon glyphicon-menu-left"></span></button>
+          <button id="btnRight" class="btn btn-custom btn-custom-grouped"><span class="glyphicon glyphicon-menu-right"></span></button>
+          <button id="btnUp" class="btn btn-custom btn-custom-grouped"><span class="glyphicon glyphicon-menu-up"></span></button>
+          <button id="btnDown" class="btn btn-custom btn-custom-grouped"><span class="glyphicon glyphicon-menu-down"></span></button>
+          <button id="btnZoomIn" class="btn btn-custom btn-custom-grouped"><span class="glyphicon glyphicon-plus"></span></button>
+          <button id="btnZoomOut" class="btn btn-custom btn-custom-grouped"><span class="glyphicon glyphicon-minus"></span></button>
+          
+        </div>
+        <div id="controlsBottomRight">
+
+          <button class="btn btn-custom btn-custom-grouped" id="btnFullscreen"><span class="glyphicon glyphicon-fullscreen"></span><span class="glyphicon glyphicon-fullscreen" style="display: none;"></span></button>
+
+        </div>
+
+      </div> <!-- Controls Bottom -->
+        
+            
+                    
+    <canvas width="1120" height="800" style="position: absolute; height: 100%; width: 100%;"></canvas><div style="position: absolute; height: 100%; width: 100%; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><div style="position: absolute; height: 100%; width: 100%; background-color: rgb(0, 0, 0); opacity: 0;"></div><div style="position: absolute; pointer-events: none; display: block; transform: translateX(0px) translateY(0px) translateZ(0px); height: 0px; width: 0px; overflow: visible;"><div style="position: absolute; pointer-events: all; opacity: 1;"></div></div></div></div> <!-- Pano -->
+
+        <div class="dialogContent" id="shareContent">
+      <div class="panel panel-primary" style="margin: 0px; padding: 0px;">
+
+        <div class="panel-heading panel-heading-custom">
+          <h5>
+                          Share RoomSketcher 360
+                      </h5>
+        </div>
+
+        <div class="panel-body">
+          
+                      <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a id="showShare" data-toggle="tab" href="https://gallery.roomsketcher.com/360/?gid=18658372&amp;l=en&amp;play=0&amp;logo=1&amp;title=1&amp;toolbar=1#share">Link</a></li>
+              <li role="presentation"><a id="showEmbed" data-toggle="tab" href="https://gallery.roomsketcher.com/360/?gid=18658372&amp;l=en&amp;play=0&amp;logo=1&amp;title=1&amp;toolbar=1#embed">Embed</a></li>
+            </ul>          
+
+            <div class="tab-content">
+              <div id="share" class="tab-pane active">
+                <div class="input-group _input-group-sm input-group-share">
+                  <input type="text" id="shareUrl" name="shareUrl" class="form-control" readonly="" value="https://gallery.roomsketcher.com/360/?gid=18658372&amp;l=en">
+                </div>
+              </div>
+              <div id="embed" class="tab-pane">
+                <div class="input-group _input-group-sm input-group-share">
+                  <textarea id="embedSource" name="embedSource" class="form-control" rows="4" readonly="">&lt;iframe width="560" height="400" src="https://gallery.roomsketcher.com/360/?gid=18658372&amp;l=en&amp;play=0&amp;logo=1&amp;title=1&amp;toolbar=1" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</textarea>
+                </div>
+              </div>
+            </div>
+                        
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+
+        <div class="dialogContent" id="aboutContent">
+      <div class="panel panel-primary" style="margin: 0px; padding: 0px;">
+          
+        <div class="panel-heading panel-heading-custom">
+          <h5>About RoomSketcher 360</h5>
+        </div>
+
+        <div class="panel-body">
+          <div class="media">
+            <div class="media-left media-middle">
+              <img class="media-object" src="./RoomSketcher_Logo_128x128.png" alt="...">
+            </div>
+            <div class="media-body">
+              <br>
+              <br>
+              <p>
+                Version 2.01
+                <br>
+                <br>
+                Created in RoomSketcher.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+<div class="_row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rs-footer">
+    <div class="col-md-12 text-center">
+      Copyright © 2020 RoomSketcher AS. All rights reserved.
+            <br>
+      Google/marzipano viewer is licensed under Apache License 2.0. 
+            <br>
+      RoomSketcher®, Live 3D Floor Plans™, 3D Storefront™ and Viseno™ are trademarks of RoomSketcher AS in Norway and other countries. 
+      <br><br>
+       <a href="https://www.roomsketcher.com/privacy/" class="underline" target="_blank">Privacy Policy</a> 
+       | <a href="https://www.roomsketcher.com/terms/" class="underline" target="_blank">Terms of Use</a>
+       | <a href="https://www.roomsketcher.com/cookies/" class="underline" target="_blank">Cookies</a>
+    </div>
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+
+
+    
+    <script src="./jquery.min.js"></script>
+    <script src="./jquery.validate.min.js"></script>
+        <script src="./bootstrap.min.js"></script>
+    <script src="./jquery.fancybox.min.js"></script>
+    <script src="./mobile-detect.min.js"></script>
+    <script>
+    var platform = "desktop";
+    $(document).ready(function() {
+      var isLyingIPad = function() {
+        try {
+          // For details see: https://github.com/hgoebl/mobile-detect.js/issues/95
+          if (navigator.userAgent.match(/Macintosh/i) !== null) {
+            var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+            var mq = function(query) {
+              return window.matchMedia(query).matches;
+            };
+            if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+              return true;
+            }
+            // include the 'heartz' as a way to have a non matching MQ to help terminate the join https://git.io/vznFH
+            var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+            return mq(query);
+          }
+          return false;
+        } catch(err) {
+          return false;
+        }
+     };
+          
+      console.log("Document Ready, Check Device");
+      var userAgent = window.navigator.userAgent;
+      //userAgent = 'Mozilla/5.0 (iPad; CPU OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B329 Safari/8536.25'; // iPad
+      //userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15'; // iPad
+      //userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1'; // iPone
+      var md = new MobileDetect(userAgent);
+      $(".showPhone").hide();
+      if ( md.phone() ) {
+        console.log("Toggle Items on Phone");
+        platform = "phone";
+        $(".hidePhone").hide();
+        $(".showPhone").show();
+      }
+      $(".showTablet").hide();
+      if ( md.tablet() ) {
+        console.log("Toggle Items on Tablet");
+        platform = "tablet";
+        $(".hideTablet").hide();
+        $(".showTablet").show();
+      } else {
+        console.log("Check for Lying iPads");
+        if (isLyingIPad()) {
+          platform = "tablet";
+          $(".hideTablet").hide();
+          $(".showTablet").show();
+        }
+      }
+    });      
+    </script>
+          <script src="./screenfull.min.js"></script>
+<script src="./marzipano.js"></script>
+
+<script type="text/javascript">
+  function addToLog(message) {
+    console.log(message);
+  }
+  addToLog("Rendering Page");
+    
+  $(document).ready( function() {
+    //alert("ready");
+    addToLog("Document Ready, Embed Player");
+    
+    var _startPlay     = '0';
+    var imageUrlFront = 'https://projectmedia.roomsketcher.com/08/885/35d-/3cc/f-11/e8-a/34a-/0ad/e2f/780/98f/original';
+    var imageUrlRight = 'https://projectmedia.roomsketcher.com/17/5b5/c5f-/3cc/f-11/e8-a/34a-/0ad/e2f/780/98f/original';
+    var imageUrlBack  = 'https://projectmedia.roomsketcher.com/11/f7d/fba-/3cc/f-11/e8-a/34a-/0ad/e2f/780/98f/original';
+    var imageUrlLeft  = 'https://projectmedia.roomsketcher.com/0d/814/c69-/3cc/f-11/e8-a/34a-/0ad/e2f/780/98f/original';
+    var imageUrlUp    = 'https://projectmedia.roomsketcher.com/1a/2dc/71e-/3cc/f-11/e8-a/34a-/0ad/e2f/780/98f/original';
+    var imageUrlDown  = 'https://projectmedia.roomsketcher.com/20/166/e91-/3cc/f-11/e8-a/34a-/0ad/e2f/780/98f/original';
+    
+    
+    // Create viewer.
+    var viewerOpts = {
+      controls: 
+        { "mouseViewMode": "drag"
+        //, "autorotateEnabled": false
+        //, "fullscreenButton": true
+      }
+    };
+    var viewer = new Marzipano.Viewer(document.getElementById('pano'), viewerOpts);
+    addToLog("Created Viewer");
+
+    // Create source.
+    addToLog("Create Source");
+    //var source = Marzipano.ImageUrlSource.fromString("http://erik-gallery.roomsketcher.com/images/rs/{f}.jpg");
+    var sourceUrl = new Marzipano.ImageUrlSource(function(tile) {
+      addToLog(" Tile: " + tile);
+      var imageUrl = "";
+      switch (tile.face) {
+        case "f": imageUrl  = imageUrlFront;    break;
+        case "b": imageUrl  = imageUrlBack;     break;
+        case "l": imageUrl  = imageUrlLeft;     break;
+        case "r": imageUrl  = imageUrlRight;    break;
+        case "u": imageUrl  = imageUrlUp;       break;
+        case "d": imageUrl  = imageUrlDown;     break;
+        default:  imageUrl  = imageUrlFront;    break;
+      }
+      addToLog("  Source: " + imageUrl);
+      return { url: imageUrl };
+    });
+    addToLog("Created Source");
+
+    // Create geometry.
+    var geometry = new Marzipano.CubeGeometry([{ tileSize: 2000, size: 2000 }]);
+
+    // Create view.
+    var initialView = {
+      yaw: 0,
+      pitch: Math.PI/16,
+      fov: 60 * Math.PI/180
+    };
+    var limiter = Marzipano.RectilinearView.limit.traditional(4096, 120*Math.PI/180);
+    var view = new Marzipano.RectilinearView(initialView, limiter);
+    //var view = new Marzipano.RectilinearView([{yaw: 0, pitch: Math.PI/16, roll: Math.PI/4, fov: 90 * Math.PI/180}], limiter);
+
+    // Create scene.
+    var scene = viewer.createScene(
+      { source: sourceUrl
+      , geometry: geometry
+      , view: view
+      , pinFirstLevel: true
+    });
+
+    // Setup start view.
+    var defaultViewParameters = {
+      yaw: 0 * Math.PI/180,
+      pitch: 10 * Math.PI/180,
+      fov: 60 * Math.PI/180
+    };
+    var options = {
+      transitionDuration: 0
+    }
+    scene.lookTo(defaultViewParameters, options);
+    
+    // Display scene.
+    scene.switchTo();
+
+    //var autorotateToggleElement = document.querySelector('#autorotateToggle');
+    //var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+
+    // Set up autorotate, if enabled.
+    //var autorotate = Marzipano.autorotate({ yawSpeed: Math.PI/16, yawAccel: 10, targetPitch: Math.PI/16, targetRoll: 0, targetFov: Math.PI/2 });
+    //var autorotate = Marzipano.autorotate({ yawSpeed: Math.PI/16, yawAccel: 10, targetPitch: 10 * Math.PI/180, targetRoll: 0, targetFov: 60 * Math.PI/180 });
+    var autorotate = Marzipano.autorotate({ yawSpeed: Math.PI/16, yawAccel: 10, targetPitch: 10 * Math.PI/180, targetRoll: 0 });
+    
+    //autorotateToggleElement.classList.add('enabled');
+    //autorotateToggleElement.addEventListener('click', toggleAutorotate);
+
+    // Set up fullscreen mode, if supported.
+    //if (screenfull.enabled) {
+    //  document.body.classList.add('fullscreen-enabled');
+    //  fullscreenToggleElement.addEventListener('click', toggleFullscreen);
+    //} else {
+    //  document.body.classList.add('fullscreen-disabled');
+    //}
+
+    // DOM elements for view controls.
+    var btnLeftElement    = document.querySelector('#btnLeft');
+    var btnRightElement   = document.querySelector('#btnRight');
+    var btnUpElement      = document.querySelector('#btnUp');
+    var btnDownElement    = document.querySelector('#btnDown');
+    var btnZoomInElement  = document.querySelector('#btnZoomIn');
+    var btnZoomOutElement = document.querySelector('#btnZoomOut');
+
+    // Dynamic parameters for controls.
+    var velocity = 0.2;
+    var friction = 1;
+
+    // Associate view controls with elements.
+    var controls = viewer.controls();
+    controls.registerMethod('btnLeft'     , new Marzipano.ElementPressControlMethod(btnLeftElement    , 'x'   , -velocity, friction), true);
+    controls.registerMethod('btnRight'    , new Marzipano.ElementPressControlMethod(btnRightElement   , 'x'   ,  velocity, friction), true);
+    controls.registerMethod('btnUp'       , new Marzipano.ElementPressControlMethod(btnUpElement      , 'y'   , -velocity, friction), true);
+    controls.registerMethod('btnDown'     , new Marzipano.ElementPressControlMethod(btnDownElement    , 'y'   ,  velocity, friction), true);
+    controls.registerMethod('btnZoomIn'   , new Marzipano.ElementPressControlMethod(btnZoomInElement  , 'zoom', -velocity, friction), true);
+    controls.registerMethod('btnZoomOut'  , new Marzipano.ElementPressControlMethod(btnZoomOutElement , 'zoom',  velocity, friction), true);
+    
+    controls.enableMethod('leftArrowKey');
+    controls.enableMethod('rightArrowKey');
+    controls.enableMethod('upArrowKey');
+    controls.enableMethod('downArrowKey');
+    controls.enableMethod('plusKey');
+    controls.enableMethod('minusKey');
+
+    controls.enableMethod('wKey');
+    controls.enableMethod('aKey');
+    controls.enableMethod('sKey');
+    controls.enableMethod('dKey');
+    //controls.enableMethod('qKey');
+    //controls.enableMethod('eKey');
+
+    // Setup Toogle Play
+    function startPlay() {
+      $("#iconPlay").hide();
+      $("#iconStop").show();
+      viewer.startMovement(autorotate);
+      viewer.setIdleMovement(1000, autorotate);
+    }
+    function stopPlay() {
+      $("#iconPlay").show();
+      $("#iconStop").hide();
+      viewer.stopMovement();
+      viewer.setIdleMovement(Infinity);
+    }
+    function togglePlay() {
+      if ( $("#iconPlay").is(":visible") ) {
+        startPlay();
+      } else {
+        stopPlay();
+      }
+    }
+    $("#btnPlay").click( function() {
+      togglePlay();
+    });
+
+
+    // Setup Toogle Fullscreen
+    // Disable fullscreen button if not supported
+    if ( !screenfull.isEnabled ) {
+      $("#btnFullscreen").attr("disabled", "disabled");
+    }
+    function toggleFullscreen() {
+      screenfull.toggle();
+    }
+    $("#btnFullscreen").click( function() {
+      toggleFullscreen();
+    });
+
+    // Setup Menu
+    function hideLogo() {
+      $("#menuItemLogoChecked").hide();
+      $("#menuItemLogoUnchecked").show();
+      $("#imgLogo").hide();
+    }
+    function showLogo() {
+      $("#menuItemLogoChecked").show();
+      $("#menuItemLogoUnchecked").hide();
+      $("#imgLogo").show();
+    }
+    $("#menuItemLogo").click( function(event) {
+      if ( $("#menuItemLogoChecked").is(":visible") ) {
+        hideLogo();
+      } else {
+        showLogo();
+      }
+      event.preventDefault();
+    });
+      
+    function hideTitle() {
+      $("#menuItemTitleChecked").hide();
+      $("#menuItemTitleUnchecked").show();
+      $("#controlsTopCenter").hide();
+    }
+    function showTitle() {
+      $("#menuItemTitleChecked").show();
+      $("#menuItemTitleUnchecked").hide();
+      $("#controlsTopCenter").show();
+    }
+    $("#menuItemTitle").click( function(event) {
+      if ( $("#menuItemTitleChecked").is(":visible") ) {
+        hideTitle();
+      } else {
+        showTitle();
+      }
+      event.preventDefault();
+    });
+      
+    function hideToolbar() {
+      $("#menuItemToolbarChecked").hide();
+      $("#menuItemToolbarUnchecked").show();
+      $("#controlsBottom").hide();
+    }
+    function showToolbar() {
+      $("#menuItemToolbarChecked").show();
+      $("#menuItemToolbarUnchecked").hide();
+      $("#controlsBottom").show();
+    }
+    $("#menuItemToolbar").click( function(event) {
+      if ( $("#menuItemToolbarChecked").is(":visible") ) {
+        hideToolbar();
+      } else {
+        showToolbar();
+      }
+      event.preventDefault();
+    });
+    $("#menuItemShare").click( function(event) {
+      stopPlay();
+      $("#mainMenu").removeClass('open');
+      $(".dropdown-menu").dropdown('toggle');
+      setTimeout(function() {
+        $("#shareUrl").focus();
+        $("#shareUrl").select();
+      },100);
+    });
+    $("#menuItemAbout").click( function(event) {
+      stopPlay();
+      $("#mainMenu").removeClass('open');
+      $(".dropdown-menu").dropdown('toggle');
+    });
+
+    // Automatic focus and select
+    $("#showShare").click( function(event) {
+      setTimeout(function() {
+        $("#shareUrl").select();
+        $("#shareUrl").focus();
+      },100);
+    });
+    $("#shareUrl").click( function(event) {
+      $("#shareUrl").select();
+    });
+    $("#showEmbed").click( function(event) {
+      setTimeout(function() {
+        $("#embedSource").select();
+        $("#embedSource").focus();
+      },100);
+    });
+    $("#embedSource").click( function(event) {
+      $("#embedSource").select();
+    });
+    $("#btnReload").click( function(event) {
+      location.reload();
+    });
+    $(".commonDialog").fancybox({
+      toolbar   : false,
+      smallBtn  : true,
+      buttons   : ['close'],	
+      autoFocus : false,
+      backFocus : true,
+      trapFocus : true,
+      lang      : 'en'
+    });
+
+    // Start Auto Rotate
+    if ( _startPlay == "1" ) {
+      addToLog("Start Auto Rotate");
+      startPlay();
+    }
+  }); 
+  
+</script>
+
+          
+</body></html>
